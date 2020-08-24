@@ -1,0 +1,122 @@
+main {
+    width: 100%;
+    position: absolute;
+    margin-top: 51%;
+
+    .art-1 {
+        background-color: #1A1A1A;
+        max-width: 100%;
+        color: white;
+        text-align: center;
+        padding: 45px;
+    }
+
+    .art-2 {
+        background-color: #272727;
+        max-width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 45px;
+
+        img {
+            width: 515px;
+            height: 375px;
+        }
+
+        @include scale-article;
+    }
+
+    .art-3 {
+        background-color: #1A1A1A;
+        max-width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 45px;
+
+        img {
+            width: 360px;
+            height: 400px;
+        }
+
+        @include scale-article-reversed;
+    }
+
+    .art-4 {
+        max-width: 100%;
+        color: white;
+        height: 50%;
+        position: relative;
+        margin-bottom: -2%;
+        @media (max-width: $breakpoint-mobile) {
+            background-image: url('./pictures/osier-bg-sm.png');
+        }
+
+        .tag {
+            position: absolute;
+            left: 50%;
+            top: 23%;
+            margin-left: -250px;
+            z-index: 1000;
+            font-weight: bold;
+            text-align: center;
+
+            @media (max-width: $breakpoint-mobile) {
+                top: 35%;
+            }
+         }
+
+        .img1 {
+            width: 100%;
+            @media (max-width: $breakpoint-mobile) {
+                display: none;
+            }
+        }
+        .img2 {
+            display: none;
+            @media (max-width: $breakpoint-mobile) {
+                display: block;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .art-5 {
+        background-color: #1A1A1A;
+        max-width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 130px;
+        padding-bottom: 45px;
+
+        iframe {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+        }
+
+        @include scale-article;
+    }
+
+    .art-6 {
+        background-color: #272727;
+        max-width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
